@@ -1,13 +1,16 @@
-name: Pull request
+name: PR Conventional Commit Validation
 
 on:
-  pull_request: {}
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
 
 jobs:
-  Validate:
-    runs-on: [self-hosted]
+  validate-pr-title:
+    runs-on: ubuntu-latest
     steps:
-      - name: Validate PR title
-        uses: lab42/conventional-commit@main
+      - name: PR Conventional Commit Validation
+        uses:  ytanikin/PRConventionalCommits@1.1.0
         with:
-          description_regexp: (.*)
+         task_types: '["feat","fix","docs","test","ci","refactor","perf","chore","revert"]'
+         add_label: 'false'
+         ticket_key_regex: 'PROJECT-\d{2,5}'
