@@ -5,7 +5,7 @@ on:
 
 jobs:
   Validate:
-    runs-on: [self-hosted]
+    runs-on: ubuntu-latest
     steps:
       - name: Validate PR title
         uses: lab42/conventional-commit@main
