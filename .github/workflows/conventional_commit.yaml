@@ -10,4 +10,4 @@ jobs:
       - name: Validate PR title
         uses: lab42/conventional-commit@main
         with:
-          description_regexp: (.*\-.*)
+          description_regexp: (.*)
