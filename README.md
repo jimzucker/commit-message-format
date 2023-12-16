@@ -24,4 +24,6 @@ jobs:
     steps:
       - name: Validate PR title
         uses: lab42/conventional-commit@main
-`
+
+
+to enforce PR titles: https://github.com/marketplace/actions/conventional-pr-title
