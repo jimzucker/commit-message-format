@@ -1,13 +1,13 @@
-name: Pull request
+ame: Conventional Commits
 
 on:
-  pull_request: {}
+  pull_request:
+    branches: [ main ]
 
 jobs:
-  Validate:
+  build:
+    name: Conventional Commits
     runs-on: ubuntu-latest
     steps:
-      - name: Validate PR title
-        uses: lab42/conventional-commit@main
-        with:
-          require_scope: "false"
+      - uses: actions/checkout@v2
+      - uses: webiny/action-conventional-commits@v1.0.3
