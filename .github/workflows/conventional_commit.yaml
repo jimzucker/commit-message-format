@@ -10,4 +10,19 @@ jobs:
       - name: Validate PR title
         uses: lab42/conventional-commit@main
         with:
-          description_regexp: (.*)
+          allowed_types: |
+              build
+              chore
+              ci
+              docs
+              feat
+              fix
+              perf
+              refactor
+              revert
+              Revert
+              style
+              test
+          require_scope: "false"
+
+          description_regexp: ([\w ]+)
