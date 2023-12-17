@@ -1,8 +1,7 @@
 ame: Conventional Commits
 
 on:
-  pull_request:
-    branches: [ main ]
+  pull_request: {}
 
 jobs:
   build:
