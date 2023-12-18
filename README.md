@@ -1,4 +1,7 @@
+
+
 Certainly! Below is a simple example of a Java project that includes the Maven configuration, Spotless plugin for code formatting, and GitHub Actions workflow for enforcing conventional commits.
+
 
 1. Java Project Structure:
 Create a simple Java class, for example, src/main/java/com/example/MyApp.java:
