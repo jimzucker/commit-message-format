@@ -1,3 +1,5 @@
+
+
 Certainly! Below is a simple example of a Java project that includes the Maven configuration, Spotless plugin for code formatting, and GitHub Actions workflow for enforcing conventional commits.
 
 
